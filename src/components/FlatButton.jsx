@@ -6,7 +6,7 @@ import { Router, Route, Link } from 'react-router';
 import Styles from 'stylesheets/components/FlatButton.sass';
 
 /**
- * Layout
+ * FlatButton
  */
 export default class FlatButton extends React.Component {
   handleOnClick = ::this.handleOnClick;
@@ -23,3 +23,8 @@ export default class FlatButton extends React.Component {
     )
   }
 }
+
+FlatButton.propTypes = {
+  children: React.PropTypes.node.isRequired,
+  onClick: React.PropTypes.func.isRequired
+};
