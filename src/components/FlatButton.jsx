@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component, PropTypes } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Router, Route, Link } from 'react-router';
@@ -8,7 +8,7 @@ import Styles from 'stylesheets/components/FlatButton.sass';
 /**
  * FlatButton
  */
-export default class FlatButton extends React.Component {
+export default class FlatButton extends Component {
   handleOnClick = ::this.handleOnClick;
 
   handleOnClick(event) {
@@ -25,6 +25,6 @@ export default class FlatButton extends React.Component {
 }
 
 FlatButton.propTypes = {
-  children: React.PropTypes.node.isRequired,
-  onClick: React.PropTypes.func.isRequired
+  children: PropTypes.node.isRequired,
+  onClick: PropTypes.func.isRequired
 };
