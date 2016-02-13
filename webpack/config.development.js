@@ -1,6 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 var DirectoryNamedWebpackPlugin = require("directory-named-webpack-plugin");
+var WebpackNotifierPlugin = require('webpack-notifier');
 
 module.exports = {
   devtool: 'source-map', // 'eval'
@@ -19,7 +20,8 @@ module.exports = {
     new webpack.NoErrorsPlugin(),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': '"development"'
-    })
+    }),
+    new WebpackNotifierPlugin()
   ],
   resolve: {
     extensions: ['', '.js', '.jsx'],
