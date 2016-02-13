@@ -1,0 +1,20 @@
+{
+  "parser"  : "babel-eslint",
+  "extends" : [
+    "standard",
+    "standard-react"
+  ],
+  "env"     : {
+    "browser" : true,
+    "node": true,
+    "jasmine": true
+  },
+  "globals": {
+    "window": false
+  },
+  "rules": {
+    "semi" : [2, "always"],
+    "space-infix-ops": 0,
+    "max-len": [2, 120, 2]
+  }
+}
