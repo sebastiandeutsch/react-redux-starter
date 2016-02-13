@@ -1,8 +1,7 @@
 import 'babel-core/register';
-import babelHelpers from 'babel-plugin-external-helpers-2';
-
-require('es5-shim/es5-sham');
-require("font-awesome-webpack");
+import 'babel-plugin-external-helpers-2';
+import 'es5-shim/es5-sham';
+import 'font-awesome-webpack';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
