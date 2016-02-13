@@ -8,7 +8,7 @@ import * as Actions from 'actions/Actions';
 import Styles from 'stylesheets/containers/Content.sass';
 
 /**
- * Lebenslauf connected React Component
+ * Displays the content
  */
 export class Content extends React.Component {
   render() {
