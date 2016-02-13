@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var DirectoryNamedWebpackPlugin = require("directory-named-webpack-plugin");
 
 module.exports = {
   devtool: 'eval',

@@ -2,6 +2,7 @@ var path = require('path');
 var fs = require('fs');
 var webpack = require('webpack');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
+var DirectoryNamedWebpackPlugin = require("directory-named-webpack-plugin");
 
 module.exports = {
   devtool: 'source-map', // 'eval'
