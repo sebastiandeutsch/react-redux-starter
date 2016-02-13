@@ -10,7 +10,7 @@ import Styles from 'stylesheets/containers/Sidebar.sass';
 import Config from 'config/Config';
 
 /**
- * Lebenslauf connected React Component
+ * Application connected React Component
  */
 export class Sidebar extends React.Component {
   render() {
