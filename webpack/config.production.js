@@ -5,9 +5,7 @@ var CopyWebpackPlugin = require('copy-webpack-plugin');
 var DirectoryNamedWebpackPlugin = require("directory-named-webpack-plugin");
 
 module.exports = {
-  devtool: 'source-map', // 'eval'
   entry: [
-    'webpack-hot-middleware/client',
     './src/index'
   ],
   output: {
@@ -17,8 +15,6 @@ module.exports = {
   },
   plugins: [
     new webpack.ResolverPlugin(new DirectoryNamedWebpackPlugin()),
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin(),
     new CopyWebpackPlugin([
       { from: 'src/public' }
     ]),

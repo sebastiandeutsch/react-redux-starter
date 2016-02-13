@@ -16,13 +16,15 @@ import Styles from './Layout.sass';
  */
 export class Layout extends React.Component {
   render() {
+    const devTools = <DevTools />;
+
     return (
       <div className={Styles.Layout}>
         <Sidebar />
         <Content>
           {this.props.children}
         </Content>
-        <DevTools />
+        {process.env.NODE_ENV != "production" && devTools}
       </div>
     )
   }

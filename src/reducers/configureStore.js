@@ -4,18 +4,27 @@ import rootReducer from 'reducers';
 import DevTools from 'containers/DevTools';
 
 export default function configureStore(initialState) {
-  const createStoreWithMiddleware = compose(
-    applyMiddleware(thunk),
-    DevTools.instrument()
-  )(createStore);
-  const store = createStoreWithMiddleware(rootReducer);
+  let store;
 
-  if (module.hot) {
-    // Enable Webpack hot module replacement for reducers
-    module.hot.accept('reducers', () => {
-      const nextReducer = require('reducers');
-      store.replaceReducer(nextReducer);
-    });
+  if (process.env.NODE_ENV == "production") {
+    const createStoreWithMiddleware = compose(
+      applyMiddleware(thunk),
+    )(createStore);
+    store = createStoreWithMiddleware(rootReducer);
+  } else {
+    const createStoreWithMiddleware = compose(
+      applyMiddleware(thunk),
+      DevTools.instrument()
+    )(createStore);
+    store = createStoreWithMiddleware(rootReducer);
+
+    if (module.hot) {
+      // Enable Webpack hot module replacement for reducers
+      module.hot.accept('reducers', () => {
+        const nextReducer = require('reducers');
+        store.replaceReducer(nextReducer);
+      });
+    }
   }
 
   return store;
