@@ -3,13 +3,13 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Router, Route, Link } from 'react-router';
 
-import Styles from 'stylesheets/containers/Layout.sass';
-
 import Sidebar from 'containers/Sidebar';
 import Content from 'containers/Content';
 import DevTools from 'containers/DevTools';
 
 import * as Actions from 'actions/Actions';
+
+import Styles from './Layout.sass';
 
 /**
  * Layout

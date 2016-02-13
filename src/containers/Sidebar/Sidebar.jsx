@@ -5,9 +5,9 @@ import { Router, Route, Link } from 'react-router';
 
 import * as Actions from 'actions/Actions';
 
-import Styles from 'stylesheets/containers/Sidebar.sass';
-
 import Config from 'config/Config';
+
+import Styles from './Sidebar.sass';
 
 /**
  * Application connected React Component

@@ -11,8 +11,8 @@ import Hello from 'containers/routes/Hello';
 
 import StoreLoader from 'loaders/StoreLoader';
 
-import ResetStyles from 'stylesheets/reset.css';
-import ApplicationStyles from 'stylesheets/application.sass';
+import ApplicationStyles from './App.sass';
+import ResetStyles from './Reset.css';
 
 const store = configureStore();
 

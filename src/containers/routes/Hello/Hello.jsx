@@ -4,10 +4,9 @@ import { connect } from 'react-redux';
 import { Router, Route, Link } from 'react-router';
 
 import FlatButton from 'components/FlatButton';
-
-import Styles from 'stylesheets/containers/routes/Hello.sass';
-
 import * as Actions from 'actions/Actions';
+
+import Styles from './Hello.sass';
 
 /**
  * Layout

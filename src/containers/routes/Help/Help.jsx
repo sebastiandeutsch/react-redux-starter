@@ -3,7 +3,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Router, Route, Link } from 'react-router';
 
-import Styles from 'stylesheets/containers/routes/Help.sass';
+import Styles from './Help.sass';
 
 /**
  * Layout
