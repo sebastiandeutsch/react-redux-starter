@@ -1,6 +1,4 @@
-import { compose, createStore, applyMiddleware, combineReducers } from 'redux';
-import { devTools, persistState } from 'redux-devtools';
-import { createHistory } from 'history';
+import { compose, createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import rootReducer from 'reducers';
 import DevTools from 'containers/DevTools';
