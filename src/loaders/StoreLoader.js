@@ -7,7 +7,7 @@ class StoreLoader extends React.Component {
   };
 
   static propTypes = {
-    routes: PropTypes.object.isRequired,
+    routes: PropTypes.array.isRequired,
     params: PropTypes.object.isRequired,
     store: PropTypes.object.isRequired
   }
