@@ -12,7 +12,7 @@ export function redirectTo(url) {
       method: 'push',
       args: url
     }
-  }
+  };
 }
 
 /**
@@ -48,7 +48,7 @@ export function changeSomethingAsync(something) {
       (error) => {
         dispatch({
           type: types.CHANGE_SOMETHING,
-          payload: new Error("Async was not successfull"),
+          payload: error,
           error: true
         });
       }
