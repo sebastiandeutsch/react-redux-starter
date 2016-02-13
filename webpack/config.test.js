@@ -31,6 +31,11 @@ module.exports = {
     root: path.resolve('./src/'),
     modulesDirectories: ['node_modules']
   },
+  externals: {
+    'cheerio': 'window',
+    'react/lib/ExecutionEnvironment': true,
+    'react/lib/ReactContext': true
+  },
   module: {
     loaders: [
       {
@@ -65,6 +70,10 @@ module.exports = {
       {
         test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: "file-loader"
+      },
+      {
+        test: /\.json$/,
+        loader: 'json'
       }
     ]
   }
