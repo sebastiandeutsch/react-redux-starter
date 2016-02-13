@@ -21,6 +21,7 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': '"production"'
     }),
+    new webpack.optimize.UglifyJsPlugin({minimize: true}),
     // this one replaces the bundle.js with the hashed version for caching reasons
     function () {
       this.plugin("done", function (stats) {
