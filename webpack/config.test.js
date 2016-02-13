@@ -18,6 +18,7 @@ module.exports = {
     publicPath: '/static/'
   },
   plugins: [
+    new webpack.ResolverPlugin(new DirectoryNamedWebpackPlugin()),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
     new webpack.DefinePlugin({

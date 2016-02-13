@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var DirectoryNamedWebpackPlugin = require("directory-named-webpack-plugin");
 
 module.exports = {
   devtool: 'source-map', // 'eval'
@@ -13,6 +14,7 @@ module.exports = {
     publicPath: '/'
   },
   plugins: [
+    new webpack.ResolverPlugin(new DirectoryNamedWebpackPlugin()),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
     new webpack.DefinePlugin({

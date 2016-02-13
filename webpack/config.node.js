@@ -24,6 +24,7 @@ module.exports = {
     publicPath: '/'
   },
   plugins: [
+    new webpack.ResolverPlugin(new DirectoryNamedWebpackPlugin()),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
     new webpack.DefinePlugin({
