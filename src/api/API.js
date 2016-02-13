@@ -1,8 +1,5 @@
-import _ from 'lodash';
 import Axios from 'axios';
 import Config from 'config/Config';
-
-
 
 export default class API {
   constructor(session, axios = Axios, config = Config) {
@@ -49,6 +46,6 @@ export default class API {
     return this._get(
       '/something',
       { something }
-    )
+    );
   }
 }
