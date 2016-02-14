@@ -3,6 +3,6 @@
 This project shows a classic react redux starter template.
 
 ```
-npm Install
+npm install
 npm start # point a browser to localhost:8000
 ```
