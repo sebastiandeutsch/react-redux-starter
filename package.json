@@ -42,7 +42,7 @@
     "copy-webpack-plugin": "^0.3.3",
     "css-loader": "^0.23.1",
     "directory-named-webpack-plugin": "^1.0.1",
-    "enzyme": "^2.0.0",
+    "enzyme": "^2.2.0",
     "es5-shim": "^4.4.1",
     "es6-promise": "^3.0.2",
     "eslint": "^2.0.0",
