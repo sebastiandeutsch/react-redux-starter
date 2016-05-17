@@ -48,4 +48,10 @@ export default class API {
       { something }
     );
   }
+
+  loadBooks() {
+    return this._get(
+      '/books'
+    );
+  }
 }
