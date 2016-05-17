@@ -55,3 +55,26 @@ export function changeSomethingAsync(something) {
     );
   };
 };
+
+export function loadBooks() {
+  return (dispatch) => {
+    let api = new API();
+    return api.loadBooks().then(
+      (response) => {
+        dispatch({
+          type: types.SET_BOOKS,
+          payload: {
+            books: response.data
+          }
+        });
+      },
+      (error) => {
+        dispatch({
+          type: types.SET_BOOKS,
+          payload: new Error("Oh shiat"),
+          error: true
+        })
+      }
+    )
+  }
+}
