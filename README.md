@@ -34,5 +34,5 @@ This is a complete list of all possible fields within `resolve`:
 
 ## Upgrade from Webpack 1.x to Webpack 2.x
 
-- `resolve.root` has been removed if you need it add the directory to the modules array.
+- `resolve.root` has been removed if you need it add the directory to the `modules` list
 - Instead of adding a resolver to `plugins` of your webpack config use the new `resolve.plugin` field
