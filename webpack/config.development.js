@@ -1,6 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
-var DirectoryNamedWebpackPlugin = require("directory-named-webpack-plugin");
+var DirectoryNamedWebpackPlugin = require("../DirectoryNamedWebpackPlugin.js");
 var WebpackNotifierPlugin = require('webpack-notifier');
 
 module.exports = {
@@ -15,7 +15,6 @@ module.exports = {
     publicPath: '/'
   },
   plugins: [
-    new webpack.ResolverPlugin(new DirectoryNamedWebpackPlugin()),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
     new webpack.DefinePlugin({
@@ -26,7 +25,8 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.jsx'],
     root: path.resolve('./src/'),
-    modulesDirectories: ['node_modules']
+    modulesDirectories: ['node_modules'],
+    plugins: [new DirectoryNamedWebpackPlugin()]
   },
   module: {
     loaders: [

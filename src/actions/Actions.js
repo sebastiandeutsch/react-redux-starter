@@ -1,5 +1,5 @@
-import * as types from 'constants/ActionTypes';
-import API from 'api/API';
+import * as types from '../constants/ActionTypes';
+import API from '../api/API';
 
 /**
  * Action creator for redirecting

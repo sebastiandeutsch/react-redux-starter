@@ -3,8 +3,8 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Router, Route, Link } from 'react-router';
 
-import FlatButton from 'components/FlatButton';
-import * as Actions from 'actions/Actions';
+import FlatButton from '../../../components/FlatButton';
+import * as Actions from '../../../actions/Actions';
 
 import Styles from './Hello.sass';
 

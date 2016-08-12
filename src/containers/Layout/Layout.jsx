@@ -3,11 +3,11 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Router, Route, Link } from 'react-router';
 
-import Sidebar from 'containers/Sidebar';
-import Content from 'containers/Content';
-import DevTools from 'containers/DevTools';
+import Sidebar from '../Sidebar';
+import Content from '../Content';
+import DevTools from '../DevTools';
 
-import * as Actions from 'actions/Actions';
+import * as Actions from '../../actions/Actions';
 
 import Styles from './Layout.sass';
 

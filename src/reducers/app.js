@@ -1,4 +1,4 @@
-import * as Actions from 'constants/ActionTypes';
+import * as Actions from '../constants/ActionTypes';
 import { browserHistory } from 'react-router';
 
 const initialState = {
