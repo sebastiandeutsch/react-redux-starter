@@ -1,13 +1,4 @@
-# Install
-
-This project shows a classic react redux starter template.
-
-```
-npm install
-npm start # point a browser to localhost:8000
-```
-
-# Webpack 2.0
+# Webpack 2.0 Resolving
 
 Webpack 2.0 has an updated enhanced resolving mechanism:
 
