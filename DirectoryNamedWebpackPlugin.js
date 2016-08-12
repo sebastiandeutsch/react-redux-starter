@@ -16,12 +16,12 @@ DirectoryNamedWebpackPlugin.prototype.apply = function (resolver) {
     var topLevelCallback = callback;
     var filename = basename(request.path);
 
-    var filePath = resolver.join(request.path, filename + ".jsx");
+    var filePath = resolver.join(request.path, filename);
 
     var obj = assign({}, request, {
       path: filePath,
       relativePath: request.relativePath && resolver.join(request.relativePath, filename)
     });
-    resolver.doResolve("file", obj, "using path: " + filePath, callback);
+    resolver.doResolve("raw-file", obj, "using path: " + filePath, callback);
   });
 };

@@ -24,8 +24,7 @@ module.exports = {
   ],
   resolve: {
     extensions: ['', '.js', '.jsx'],
-    root: path.resolve('./src/'),
-    modulesDirectories: ['node_modules'],
+    modules: ['src', 'node_modules'],
     plugins: [new DirectoryNamedWebpackPlugin()]
   },
   module: {

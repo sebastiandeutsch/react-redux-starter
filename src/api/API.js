@@ -1,5 +1,5 @@
 import Axios from 'axios';
-import Config from '../config/Config';
+import Config from 'config/Config';
 
 export default class API {
   constructor(session, axios = Axios, config = Config) {

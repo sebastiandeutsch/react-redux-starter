@@ -1,15 +1,15 @@
 import React from 'react';
 
 import { Provider } from 'react-redux';
-import configureStore from '../../reducers/configureStore';
-import * as Actions from '../../actions/Actions';
+import configureStore from 'reducers/configureStore';
+import * as Actions from 'actions/Actions';
 import { match, Router, Route, IndexRoute, browserHistory, useRouterHistory } from 'react-router';
 
-import Layout from '../../containers/Layout';
-import Help from '../../containers/routes/Help';
-import Hello from '../../containers/routes/Hello';
+import Layout from 'containers/Layout';
+import Help from 'containers/routes/Help';
+import Hello from 'containers/routes/Hello';
 
-import StoreLoader from '../../loaders/StoreLoader';
+import StoreLoader from 'loaders/StoreLoader';
 
 import ApplicationStyles from './App.sass';
 import ResetStyles from './Reset.css';
