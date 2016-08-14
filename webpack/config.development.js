@@ -1,7 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
-var DirectoryNamedWebpackPlugin = require("../DirectoryNamedWebpackPlugin.js");
 var WebpackNotifierPlugin = require('webpack-notifier');
+var ComponentDirectoryPlugin = require("component-directory-webpack-plugin");
 
 module.exports = {
   devtool: 'source-map', // 'eval'
@@ -25,7 +25,7 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.jsx'],
     modules: ['src', 'node_modules'],
-    plugins: [new DirectoryNamedWebpackPlugin()]
+    plugins: [new ComponentDirectoryPlugin()]
   },
   module: {
     loaders: [
