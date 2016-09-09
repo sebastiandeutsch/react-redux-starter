@@ -6,6 +6,7 @@ var DirectoryNamedWebpackPlugin = require("directory-named-webpack-plugin");
 
 module.exports = {
   entry: [
+    'babel-polyfill',
     './src/index'
   ],
   output: {
