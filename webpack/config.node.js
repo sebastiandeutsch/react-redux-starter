@@ -56,11 +56,11 @@ module.exports = {
         ]
       },
       {
-        test: /\.png$/,
+        test: /\.png$|\.gif$/,
         loader: "url-loader?limit=100000"
       },
       {
-        test: /\.jpg$/,
+        test: /\.jpe?g$/,
         loader: "file-loader"
       },
       {
