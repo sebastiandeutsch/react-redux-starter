@@ -6,6 +6,7 @@ var WebpackNotifierPlugin = require('webpack-notifier');
 module.exports = {
   devtool: 'source-map', // 'eval'
   entry: [
+    'babel-polyfill',
     'webpack-hot-middleware/client',
     './src/index'
   ],
